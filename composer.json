@@ -45,8 +45,7 @@
     "wpackagist-plugin/siteorigin-panels": "2.2.2",
     "wpackagist-plugin/so-css": "1.0.4",
     "roots/soil": "3.6.2",
-    "wpackagist-plugin/custom-options-plus": "1.5",
-    "wpackagist-plugin/wp-filebase": "*"
+    "wpackagist-plugin/custom-options-plus": "1.5"
   },
   "extra": {
     "installer-paths": {
