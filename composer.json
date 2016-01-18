@@ -1,19 +1,19 @@
 {
-  "name": "roots/sage",
+  "name": "colinplusplus/Opus-Energy",
   "type": "wordpress-theme",
   "license": "MIT",
-  "description": "The best WordPress starter theme with a modern front-end development workflow. Based on HTML5 Boilerplate, gulp, Bower, and Bootstrap.",
-  "homepage": "https://roots.io/sage/",
+  "description": "Custom wordpress theme for Opus-Energy",
+  "homepage": "http://mainstreetcreativeco.com",
   "authors": [
     {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
+      "name": "Colin Williams",
+      "email": "colin@mainstreetcreativeco.com",
+      "homepage": "https://github.com/colinplusplus"
     },
     {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
+      "name": "Stacy McCrady",
+      "email": "staceymccrady@hotmail.com",
+      "homepage": "https://github.com/babylonn"
     }
   ],
   "keywords": [
