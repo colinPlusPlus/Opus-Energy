@@ -1,0 +1,432 @@
+[
+    {
+        "name": "composer/installers",
+        "version": "v1.0.22",
+        "version_normalized": "1.0.22.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/installers.git",
+            "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/installers/zipball/bd9b14f094c89c8b5804a4e41edeb7853bb85046",
+            "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "1.0.0"
+        },
+        "replace": {
+            "roundcube/plugin-installer": "*",
+            "shama/baton": "*"
+        },
+        "require-dev": {
+            "composer/composer": "1.0.*@dev",
+            "phpunit/phpunit": "4.1.*"
+        },
+        "time": "2015-10-29 23:28:48",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "Composer\\Installers\\Plugin",
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Composer\\Installers\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kyle Robinson Young",
+                "email": "kyle@dontkry.com",
+                "homepage": "https://github.com/shama"
+            }
+        ],
+        "description": "A multi-framework Composer library installer",
+        "homepage": "http://composer.github.com/installers/",
+        "keywords": [
+            "Craft",
+            "Dolibarr",
+            "Hurad",
+            "MODX Evo",
+            "OXID",
+            "SMF",
+            "Thelia",
+            "WolfCMS",
+            "agl",
+            "aimeos",
+            "annotatecms",
+            "bitrix",
+            "cakephp",
+            "chef",
+            "codeigniter",
+            "concrete5",
+            "croogo",
+            "dokuwiki",
+            "drupal",
+            "elgg",
+            "fuelphp",
+            "grav",
+            "installer",
+            "joomla",
+            "kohana",
+            "laravel",
+            "lithium",
+            "magento",
+            "mako",
+            "mediawiki",
+            "modulework",
+            "moodle",
+            "phpbb",
+            "piwik",
+            "ppi",
+            "puppet",
+            "roundcube",
+            "shopware",
+            "silverstripe",
+            "symfony",
+            "typo3",
+            "wordpress",
+            "zend",
+            "zikula"
+        ]
+    },
+    {
+        "name": "wpackagist-plugin/siteorigin-panels",
+        "version": "2.2.2",
+        "version_normalized": "2.2.2.0",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/siteorigin-panels/",
+            "reference": "tags/2.2.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/siteorigin-panels.2.2.2.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/siteorigin-panels/"
+    },
+    {
+        "name": "wpackagist-plugin/so-css",
+        "version": "1.0.4",
+        "version_normalized": "1.0.4.0",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/so-css/",
+            "reference": "tags/1.0.4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/so-css.1.0.4.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/so-css/"
+    },
+    {
+        "name": "wpackagist-plugin/advanced-custom-fields",
+        "version": "4.4.5",
+        "version_normalized": "4.4.5.0",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
+            "reference": "tags/4.4.5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.5.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
+    },
+    {
+        "name": "wpackagist-plugin/akismet",
+        "version": "3.1.7",
+        "version_normalized": "3.1.7.0",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/akismet/",
+            "reference": "tags/3.1.7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/akismet.3.1.7.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/akismet/"
+    },
+    {
+        "name": "wpackagist-plugin/jetpack",
+        "version": "3.8.2",
+        "version_normalized": "3.8.2.0",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/jetpack/",
+            "reference": "tags/3.8.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/jetpack.3.8.2.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/jetpack/"
+    },
+    {
+        "name": "wpackagist-plugin/members",
+        "version": "1.1.1",
+        "version_normalized": "1.1.1.0",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/members/",
+            "reference": "tags/1.1.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/members.1.1.1.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/members/"
+    },
+    {
+        "name": "wpackagist-plugin/redirection",
+        "version": "2.4.3",
+        "version_normalized": "2.4.3.0",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/redirection/",
+            "reference": "tags/2.4.3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/redirection.2.4.3.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/redirection/"
+    },
+    {
+        "name": "wpackagist-plugin/regenerate-thumbnails",
+        "version": "2.2.6",
+        "version_normalized": "2.2.6.0",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/regenerate-thumbnails/",
+            "reference": "tags/2.2.6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.2.6.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/regenerate-thumbnails/"
+    },
+    {
+        "name": "wpackagist-plugin/search-and-replace",
+        "version": "2.7.1",
+        "version_normalized": "2.7.1.0",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/search-and-replace/",
+            "reference": "tags/2.7.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/search-and-replace.2.7.1.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "source",
+        "homepage": "https://wordpress.org/plugins/search-and-replace/"
+    },
+    {
+        "name": "wpackagist-plugin/simple-social-icons",
+        "version": "1.0.14",
+        "version_normalized": "1.0.14.0",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/simple-social-icons/",
+            "reference": "tags/1.0.14"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/simple-social-icons.1.0.14.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/simple-social-icons/"
+    },
+    {
+        "name": "wpackagist-plugin/uk-cookie-consent",
+        "version": "2.0.5",
+        "version_normalized": "2.0.5.0",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/uk-cookie-consent/",
+            "reference": "tags/2.0.5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/uk-cookie-consent.2.0.5.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/uk-cookie-consent/"
+    },
+    {
+        "name": "wpackagist-plugin/wp-pagenavi",
+        "version": "2.89.1",
+        "version_normalized": "2.89.1.0",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/wp-pagenavi/",
+            "reference": "tags/2.89.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/wp-pagenavi.2.89.1.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/wp-pagenavi/"
+    },
+    {
+        "name": "roots/soil",
+        "version": "3.6.2",
+        "version_normalized": "3.6.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/roots/soil.git",
+            "reference": "8b534d4b271033d22b8fa0d055c740f7f9c4ca58"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/roots/soil/zipball/8b534d4b271033d22b8fa0d055c740f7f9c4ca58",
+            "reference": "8b534d4b271033d22b8fa0d055c740f7f9c4ca58",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "~1.0",
+            "php": ">=5.4.0"
+        },
+        "time": "2015-12-24 19:42:34",
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Scott Walkinshaw",
+                "email": "scott.walkinshaw@gmail.com",
+                "homepage": "https://github.com/swalkinshaw"
+            },
+            {
+                "name": "Ben Word",
+                "email": "ben@benword.com",
+                "homepage": "https://github.com/retlehs"
+            }
+        ],
+        "description": "A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications",
+        "homepage": "https://roots.io/plugins/soil/",
+        "keywords": [
+            "wordpress"
+        ]
+    },
+    {
+        "name": "wpackagist-plugin/custom-options-plus",
+        "version": "1.5",
+        "version_normalized": "1.5.0.0",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/custom-options-plus/",
+            "reference": "tags/1.5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/custom-options-plus.1.5.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/custom-options-plus/"
+    }
+]
