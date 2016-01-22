@@ -260,3 +260,13 @@ add_filter( 'excerpt_length', __NAMESPACE__ . '\\opus_excerpt_length' );
 function opus_excerpt_length( $length ) {
   return 50; // pull first 50 words
 }
+
+/**
+ * Register Site Origin Widgets Location
+ *
+ **/
+function add_site_origin_widgets_collection($folders){
+    $folders[] = get_template_directory(). '/lib/widgets/';
+    return $folders;
+}
+add_filter('siteorigin_widgets_widget_folders', __NAMESPACE__.'\\add_site_origin_widgets_collection');

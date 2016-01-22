@@ -17,7 +17,8 @@ $sage_includes = [
   'lib/wrapper.php',   // Theme wrapper class
   'lib/customizer.php', // Theme customizer
   'lib/custom_post_types.php', //Custom Post Types
-  'lib/classes/wp_bootstrap_navwalker.php' // Nav Walker Class 
+  'lib/classes/wp_bootstrap_navwalker.php', // Nav Walker Class
+  //'lib/widgets.php', // Custom theme widgets
 ];
 
 foreach ($sage_includes as $file) {
