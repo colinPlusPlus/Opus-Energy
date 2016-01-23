@@ -1,12 +1,12 @@
 <?php
 
 /*
-Widget Name: Jumbotron Widget
+Widget Name: Jumbotron Widget!
 Description: Bootstrap Jumbotron
 Author: Colin Williams
 */
 
-class Hello_World_Widget extends SiteOrigin_Widget {
+class Jumbotron_Widget extends SiteOrigin_Widget {
 
 	function __construct() {
 		//Here you can do any preparation required before calling the parent constructor, such as including additional files or initializing variables.
@@ -14,16 +14,15 @@ class Hello_World_Widget extends SiteOrigin_Widget {
 		//Call the parent constructor with the required arguments.
 		parent::__construct(
 		// The unique id for your widget.
-			'hello-world-widget',
+			'jumbotron-widget',
 
 			// The name of the widget for display purposes.
-			__('Hello World Widget', 'hello-world-widget-text-domain'),
+			__('Jumbotron Widget', 'sage'),
 
 			// The $widget_options array, which is passed through to WP_Widget.
 			// It has a couple of extras like the optional help URL, which should link to your sites help or support page.
 			array(
-				'description' => __('A hello world widget.', 'hello-world-widget-text-domain'),
-				'help'        => 'http://example.com/hello-world-widget-docs',
+				'description' => __('A Jumbotron widget.', 'sage'),
 			),
 
 			//The $control_options array, which is passed through to WP_Widget
@@ -34,7 +33,7 @@ class Hello_World_Widget extends SiteOrigin_Widget {
 			array(
 				'text' => array(
 					'type' => 'text',
-					'label' => __('Hello world! goes here.', 'siteorigin-widgets'),
+					'label' => __('Your text goes here.', 'siteorigin-widgets'),
 					'default' => 'Hello world!'
 				),
 			),
@@ -45,16 +44,9 @@ class Hello_World_Widget extends SiteOrigin_Widget {
 	}
 
 	function get_template_name($instance) {
-		return 'jbt-widget';
-	}
-
-	function get_template_dir($instance) {
 		return 'jumbotron-template';
 	}
 
-// 	function get_style_name($instance) {
-// 		return '';
-// 	}
 }
 
-siteorigin_widget_register('hello-world-widget', __FILE__, 'Hello_World_Widget');
+siteorigin_widget_register('jumbotron-widget', __FILE__, 'Jumbotron_Widget');

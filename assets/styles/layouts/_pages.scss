@@ -1,3 +1,14 @@
 .wrap.container{
 	background-color: #ffffff;
 }
+
+.fold.home{
+    height: 649px;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+    }
+}

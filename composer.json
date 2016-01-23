@@ -45,7 +45,8 @@
     "wpackagist-plugin/siteorigin-panels": "2.2.2",
     "wpackagist-plugin/so-css": "1.0.4",
     "roots/soil": "3.6.2",
-    "wpackagist-plugin/custom-options-plus": "1.5"
+    "wpackagist-plugin/custom-options-plus": "1.5",
+    "wpackagist-plugin/so-widgets-bundle": "1.5.4"
   },
   "extra": {
     "installer-paths": {
