@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5b2f96b4e9c777d74f0b9d1155e5002d",
-    "content-hash": "410d485fc14dd44fcf3eebb1e946a5eb",
+    "hash": "78e57e3039a6aba354c8c9e2f43a7dec",
+    "content-hash": "588f430de2775dbfadba45a5c0937944",
     "packages": [
         {
             "name": "composer/installers",
@@ -209,15 +209,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "3.8.2",
+            "version": "3.9.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/3.8.2"
+                "reference": "tags/3.9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.3.8.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.3.9.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -368,16 +368,36 @@
             "homepage": "https://wordpress.org/plugins/so-css/"
         },
         {
-            "name": "wpackagist-plugin/uk-cookie-consent",
-            "version": "2.0.5",
+            "name": "wpackagist-plugin/so-widgets-bundle",
+            "version": "1.5.4",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/uk-cookie-consent/",
-                "reference": "tags/2.0.5"
+                "url": "http://plugins.svn.wordpress.org/so-widgets-bundle/",
+                "reference": "tags/1.5.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/uk-cookie-consent.2.0.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/so-widgets-bundle.1.5.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/so-widgets-bundle/"
+        },
+        {
+            "name": "wpackagist-plugin/uk-cookie-consent",
+            "version": "2.0.6",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/uk-cookie-consent/",
+                "reference": "tags/2.0.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/uk-cookie-consent.2.0.6.zip",
                 "reference": null,
                 "shasum": null
             },

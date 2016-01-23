@@ -136,136 +136,121 @@ add_theme_support( 'custom-header', array(
 /* Custom Post Types
 **************************************/
 
-register_post_type( 'News',
-  array(
-    'labels' => array(
-      'name' => __( 'News' ),
-      'singular_name' => __( 'News' )
-    ),
-  'public' => true,
-  'rewrite' => array('slug' => 'news'),
-  'has_archive' => true,
-  'menu_icon' => 'dashicons-media-text'
-  )
-);
+add_action( 'init', __NAMESPACE__ . '\\custom_post_types' );
+function custom_post_types() {
+  register_post_type( 'News',
+    array(
+      'labels' => array(
+        'name' => __( 'News' ),
+        'singular_name' => __( 'News' )
+      ),
+      'public' => true,
+      'rewrite' => array('slug' => 'news'),
+      'has_archive' => true,
+      'menu_icon' => 'dashicons-media-text'
+    )
+  );
 
-register_post_type( 'Industry news',
-  array(
-    'labels' => array(
-      'name' => __( 'Industry news' ),
-      'singular_name' => __( 'Industry news' )
-    ),
-  'public' => true,
-  'rewrite' => array('slug' => 'industry-news'),
-  'has_archive' => true,
-  'menu_icon' => 'dashicons-media-document'
-  )
-);
+  register_post_type( 'Industry news',
+    array(
+      'labels' => array(
+        'name' => __( 'Industry news' ),
+        'singular_name' => __( 'Industry news' )
+      ),
+      'public' => true,
+      'rewrite' => array('slug' => 'industry-news'),
+      'has_archive' => true,
+      'menu_icon' => 'dashicons-media-document'
+    )
+  );
 
-// // function cpt_home_slider() {
-// //   register_post_type( 'Home Slider',
-// //     array(
-// //       'labels' => array(
-// //         'name' => __( 'Home Slider' ),
-// //         'singular_name' => __( 'Home Slider' )
-// //       ),
-// //     'public' => true,
-// //     'hierarchical' => true,
-// //     'has_archive' => false,
-// //     'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'page-attributes' ),
-// //     'menu_icon' => get_template_directory_uri().'/images/wordpress/cpt-home-slider.png'
-// //     )
-// //   );
-// // };
-// // add_action( 'init', 'cpt_home_slider' );
-//
-register_post_type( 'People',
-  array(
-    'labels' => array(
-      'name' => __( 'People' ),
-      'singular_name' => __( 'People' )
-    ),
-  'public' => true,
-  'hierarchical' => true,
-  'has_archive' => false,
-  'menu_icon' => 'dashicons-admin-users'
-  )
-);
+  register_post_type( 'People',
+    array(
+      'labels' => array(
+        'name' => __( 'People' ),
+        'singular_name' => __( 'People' )
+      ),
+    'public' => true,
+    'hierarchical' => true,
+    'has_archive' => false,
+    'menu_icon' => 'dashicons-admin-users'
+    )
+  );
+  register_post_type( 'Newsletters',
+    array(
+      'labels' => array(
+        'name' => __( 'Newsletters' ),
+        'singular_name' => __( 'Newsletters' )
+      ),
+    'public' => true,
+    'rewrite' => array('slug' => 'corporate/newsletter'),
+    'hierarchical' => true,
+    'supports' => array('title','editor','thumbnail','page-attributes'),
+    'has_archive' => false,
+    'menu_icon' => 'dashicons-analytics'
+    )
+  );
+
+  register_post_type( 'Testimonials',
+      array(
+        'labels' => array(
+          'name' => __( 'Testimonials' ),
+          'singular_name' => __( 'Testimonials' )
+        ),
+      'public' => true,
+      'has_archive' => true,
+      'menu_icon' => 'dashicons-smiley'
+      )
+    );
+
+  register_post_type( 'Case Studies',
+    array(
+      'labels' => array(
+        'name' => __( 'Case Studies' ),
+        'singular_name' => __( 'Case Studies' )
+      ),
+    'public' => true,
+    'rewrite' => array('slug' => 'case-studies'),
+    'has_archive' => true,
+    'menu_icon' => 'dashicons-chart-line'
+    )
+  );
+
+  register_post_type( 'Partners',
+    array(
+      'labels' => array(
+        'name' => __( 'Partners' ),
+        'singular_name' => __( 'Partner' )
+      ),
+    'public' => true,
+    'rewrite' => array('slug' => 'partner'),
+    'has_archive' => false,
+    'hierarchical' => true,
+    'menu_icon' => 'dashicons-groups'
+    )
+  );
+}
 
 add_post_type_support( 'People', 'page-attributes' );
 
-register_post_type( 'Newsletters',
-  array(
-    'labels' => array(
-      'name' => __( 'Newsletters' ),
-      'singular_name' => __( 'Newsletters' )
-    ),
-  'public' => true,
-  'rewrite' => array('slug' => 'corporate/newsletter'),
-  'hierarchical' => true,
-  'supports' => array('title','editor','thumbnail','page-attributes'),
-  'has_archive' => false,
-  'menu_icon' => 'dashicons-analytics'
-  )
-);
-
-register_post_type( 'Testimonials',
-  array(
-    'labels' => array(
-      'name' => __( 'Testimonials' ),
-      'singular_name' => __( 'Testimonials' )
-    ),
-  'public' => true,
-  'has_archive' => true,
-  'menu_icon' => 'dashicons-smiley'
-  )
-);
-
-register_post_type( 'Case Studies',
-  array(
-    'labels' => array(
-      'name' => __( 'Case Studies' ),
-      'singular_name' => __( 'Case Studies' )
-    ),
-  'public' => true,
-  'rewrite' => array('slug' => 'case-studies'),
-  'has_archive' => true,
-  'menu_icon' => 'dashicons-chart-line'
-  )
-);
-
-register_post_type( 'Partners',
-  array(
-    'labels' => array(
-      'name' => __( 'Partners' ),
-      'singular_name' => __( 'Partner' )
-    ),
-  'public' => true,
-  'rewrite' => array('slug' => 'partner'),
-  'has_archive' => false,
-  'hierarchical' => true,
-  'menu_icon' => 'dashicons-groups'
-  )
-);
 
 //* Modify the WordPress read more link
-add_filter( 'excerpt_more', __NAMESPACE__ .'\\opus_excerpt_more' );
-function opus_excerpt_more( $more ) {
-  return '<p> <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'Genesis' ) . '</a></p>';
-}
+add_filter( 'excerpt_more', function( $more ){
+  return '<p> <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">'
+          . __( 'Read More', 'sage' ) . '</a></p>';
+});
 
 //* Modify the length of post excerpts
-add_filter( 'excerpt_length', __NAMESPACE__ . '\\opus_excerpt_length' );
-function opus_excerpt_length( $length ) {
+add_filter( 'excerpt_length', function( $length ) {
   return 50; // pull first 50 words
-}
+});
 
 /**
  * Register Site Origin Widgets Location
  *
  **/
-function add_site_origin_widgets_collection($folders){
+
+add_filter('siteorigin_widgets_widget_folders', function($folders){
     $folders[] = get_template_directory(). '/lib/widgets/';
     return $folders;
-}
-add_filter('siteorigin_widgets_widget_folders', __NAMESPACE__.'\\add_site_origin_widgets_collection');
+});
