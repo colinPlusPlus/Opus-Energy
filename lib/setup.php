@@ -116,11 +116,9 @@ add_image_size( 'header', 1920, 9999, TRUE );
 
 //* Add support for custom header
 add_theme_support( 'custom-header', array(
-  'header-text'     => true,
-  'flex-width'      => true,
-  'flex-height'     => false,
-  'height'          => 100,
-  'width'           => 260,
+  'height'          => 96,
+  'width'           => 261,
+  'width'           => "full"
 ) );
 
 
