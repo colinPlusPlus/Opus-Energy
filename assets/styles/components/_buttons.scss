@@ -1,0 +1,3 @@
+.btn{
+    @include button-size(7px, 45px, $font-size-base, $line-height-base, $btn-border-radius-base);
+}

@@ -6,16 +6,32 @@ $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
 // Colors
-$pink:                  #CF3F74;
 $green:                 #91BAB2;
 $brand-primary:         #283244;
 
 $body-bg:               #f2f2f2;
-$navbar-default-bg:     #e4e9f2;
-$navbar-default-link-color: $brand-primary;
 
-$blue-gray:				#283244;
+$blue:				    #283244;
 $pink:					#cf3f74;
 $aqua:					#91bab2;
 $med-gray:				#5f646d;
 $periwinkle:			#aeb7c7;
+$light-blue:            #e4e9f2;
+
+//Navigation Bar
+$navbar-margin-bottom: 0px;
+$navbar-default-bg: $light-blue;
+
+// Navbar links
+$navbar-default-link-color:                $blue !default;
+$navbar-default-link-hover-color:          lighten($blue, 30%) !default;
+$navbar-default-link-hover-bg:             transparent !default;
+//$navbar-default-link-active-color:         #555 !default;
+$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-disabled-color:       #ccc !default;
+$navbar-default-link-disabled-bg:          transparent !default;
+
+$nav-link-padding:                          10px 25px  !default;
+
+//Buttons
+$btn-border-radius-base: 20px;

@@ -1,14 +1,12 @@
 .wrap.container{
 	background-color: #ffffff;
 }
+//Home page
 
-.fold.home{
+.panel-widget-style{
+    .so-widget-jumbotron-widget{
     height: 649px;
-    .container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        height: 100%;
+    padding-top: 200px;
+    text-align: center;
     }
 }

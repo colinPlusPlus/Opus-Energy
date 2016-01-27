@@ -31,11 +31,17 @@ class Jumbotron_Widget extends SiteOrigin_Widget {
 
 			//The $form_options array, which describes the form fields used to configure SiteOrigin widgets. We'll explain these in more detail later.
 			array(
-				'text' => array(
+				'header' => array(
 					'type' => 'text',
 					'label' => __('Your text goes here.', 'siteorigin-widgets'),
 					'default' => 'Hello world!'
 				),
+				'Text Area' => array(
+        'type' => 'textarea',
+        'label' => __( 'Type a message', 'widget-form-fields-text-domain' ),
+        'default' => 'An example of a long message.</br>It is even possible to add a few html tags.</br><a href="siteorigin.com" target="_blank"">Links!</a></br><strong>Strong</strong> and <em>emphasized</em> text.',
+        'rows' => 10
+    )
 			),
 
 			//The $base_folder path string.
