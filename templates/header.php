@@ -1,6 +1,6 @@
 <header class="banner">
   <div class="container">
-    <img src="<?php header_image(); ?>" class="pull-left" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="logo"/>
+    <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'?>" class="pull-left" alt="logo"/>
     <button class="btn btn-default pull-right green">My account</button>
   </div>
 </header>
@@ -12,7 +12,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
-    </button> 
+    </button>
   </div>
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <?php

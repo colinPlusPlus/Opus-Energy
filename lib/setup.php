@@ -248,6 +248,6 @@ add_filter( 'excerpt_length', function( $length ) {
  **/
 
 add_filter('siteorigin_widgets_widget_folders', function($folders){
-    $folders[] = get_template_directory(). '/lib/widgets/';
+    $folders[] = get_template_directory(). '/templates/widgets/';
     return $folders;
 });
