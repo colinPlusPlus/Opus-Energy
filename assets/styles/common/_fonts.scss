@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'averta';
+    src: url($icon-font-path + 'averta_bold-webfont.eot');
+    src: url($icon-font-path + 'averta_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url($icon-font-path + 'averta_bold-webfont.woff2') format('woff2'),
+         url($icon-font-path + 'averta_bold-webfont.woff') format('woff'),
+         url($icon-font-path + 'averta_bold-webfont.ttf') format('truetype'),
+         url($icon-font-path + 'averta_bold-webfont.svg#avertabold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'averta';
+    src: url($icon-font-path + 'averta_light-webfont.eot');
+    src: url($icon-font-path + 'averta_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url($icon-font-path + 'averta_light-webfont.woff2') format('woff2'),
+         url($icon-font-path + 'averta_light-webfont.woff') format('woff'),
+         url($icon-font-path + 'averta_light-webfont.ttf') format('truetype'),
+         url($icon-font-path + 'averta_light-webfont.svg#avertalight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'averta';
+    src: url($icon-font-path + 'averta_semibold-webfont.eot');
+    src: url($icon-font-path + 'averta_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url($icon-font-path + 'averta_semibold-webfont.woff2') format('woff2'),
+         url($icon-font-path + 'averta_semibold-webfont.woff') format('woff'),
+         url($icon-font-path + 'averta_semibold-webfont.ttf') format('truetype'),
+         url($icon-font-path + 'averta_semibold-webfont.svg#webfontregular') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'averta';
+    src: url($icon-font-path + 'averta-webfont.eot');
+    src: url($icon-font-path + 'averta-webfont.eot?#iefix') format('embedded-opentype'),
+         url($icon-font-path + 'averta-webfont.woff2') format('woff2'),
+         url($icon-font-path + 'averta-webfont.woff') format('woff'),
+         url($icon-font-path + 'averta-webfont.ttf') format('truetype'),
+         url($icon-font-path + 'averta-webfont.svg#avertaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+// @font-face {
+//   font-family: "opus-font-1";
+//   src:url($icon-font-path + "opus-font-1.eot");
+//   src:url($icon-font-path + "opus-font-1.eot?#iefix") format("embedded-opentype"),
+//     url($icon-font-path + "opus-font-1.woff") format("woff"),
+//     url($icon-font-path + "opus-font-1.ttf") format("truetype"),
+//     url($icon-font-path + "opus-font-1.svg#untitled-font-1") format("svg");
+//   font-weight: normal;
+//   font-style: normal;
+
+// }
+
+// [data-icon]:before {
+//   font-family: "opus-font-1" !important;
+//   content: attr(data-icon);
+//   font-style: normal !important;
+//   font-weight: normal !important;
+//   font-variant: normal !important;
+//   text-transform: none !important;
+//   speak: none;
+//   line-height: 1;
+//   color: #FFFFFF;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+// [class^="icon-"]:before,
+// [class*=" icon-"]:before {
+//   font-family: "opus-font-1" !important;
+//   font-style: normal !important;
+//   font-weight: normal !important;
+//   font-variant: normal !important;
+//   text-transform: none !important;
+//   speak: none;
+//   line-height: 1;
+//   color: #FFFFFF;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+// .icon-question-mark:before {
+//   content: "\61";
+// }
+// .icon-shop:before {
+//   content: "\62";
+// }
+

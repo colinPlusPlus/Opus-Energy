@@ -35,7 +35,7 @@ class Business_Card_Widget extends SiteOrigin_Widget {
               'type' => 'select',
               'prompt' => __( 'Choose an icon', 'sage' ),
               'options' => array(
-                  'shop' => __( 'shop', 'widget-form-fields-text-domain' ),
+                  'icon-shop' => __( 'icon-shop', 'widget-form-fields-text-domain' ),
                   //'that_thing' => __( 'That thing', 'widget-form-fields-text-domain' ),
                   //'the_other_thing' => __( 'The other thing', 'widget-form-fields-text-domain' ),
               )
