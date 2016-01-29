@@ -98,7 +98,6 @@ function display_sidebar() {
  * Theme assets
  */
 function assets() {
-  wp_enqueue_style( 'opus/icons', "https://file.myfontastic.com/xeCNxwD4XoDyeRj9kDWE9U/icons.css", false, null );
   wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), false, null);
 
   if (is_single() && comments_open() && get_option('thread_comments')) {
@@ -252,3 +251,20 @@ add_filter('siteorigin_widgets_widget_folders', function($folders){
     $folders[] = get_template_directory(). '/templates/widgets/';
     return $folders;
 });
+
+// add custom icons to site origin select box
+// function my_icon_families_filter( $icon_families ) {
+//     $icon_families['my-rad-icon-family'] = array(
+//         'name' => __( 'My Rad Icons', 'example-text-domain' ),
+//         'style_uri' => get_template_directory_uri() .'/dist/icons.css',
+//         'icons' => array(
+//           'question-mark' => '&#97;'
+//         ),
+//     );
+//     var_dump($icon_families);
+// }
+// add_filter( 'siteorigin_widgets_icon_families', __NAMESPACE__ . '\\my_icon_families_filter' );
+
+
+
+

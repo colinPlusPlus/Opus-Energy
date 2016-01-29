@@ -31,15 +31,41 @@ class Business_Card_Widget extends SiteOrigin_Widget {
 
             //The $form_options array, which describes the form fields used to configure SiteOrigin widgets. We'll explain these in more detail later.
             array(
-              'icon_selection' => array(
-              'type' => 'select',
-              'prompt' => __( 'Choose an icon', 'sage' ),
-              'options' => array(
-                  'icon-shop' => __( 'icon-shop', 'widget-form-fields-text-domain' ),
-                  //'that_thing' => __( 'That thing', 'widget-form-fields-text-domain' ),
-                  //'the_other_thing' => __( 'The other thing', 'widget-form-fields-text-domain' ),
-              )
-          )
+              'header_section' => array(
+              'type' => 'section',
+              'label' => __( 'A section containing related fields.' , 'widget-form-fields-text-domain' ),
+              'hide' => false,
+              'fields' => array(
+                'icon_selection' => array(
+                  'type' => 'select',
+                  'prompt' => __( 'Choose an icon', 'sage' ),
+                  'options' => array(
+                      'icon-shop' => __( 'Shop Icon', 'sage' ),
+                      'icon-question-mark' => __( 'Question Mark', 'sage' ),
+                      'icon-document' => __( 'Document Icon', 'sage' ),
+                      'icon-chat' => __( 'Chat Icon', 'sage' ),
+                      'icon-conversation' => __( 'Conversation Icon', 'sage' ),
+                      'icon-electricity' => __( 'Electricity Icon', 'sage' ),
+                      'icon-gas' => __( 'Gas Icon', 'sage' ),
+                      'icon-office' => __( 'Office Icon', 'sage' ),
+                      'icon-meters' => __( 'Meters Icon', 'sage' ),
+                      'icon-moving-truck' => __( 'Moving Truck', 'sage' ),
+                      'icon-computer' => __( 'Computer Icon', 'sage' ),
+                      'icon-pound' => __( 'British Pound', 'sage' ),
+                      'icon-windmill' => __( 'Wind Energy', 'sage' ),
+                      'icon-switch-to-us-icon' => __( 'Switch To Us', 'sage' )
+                    )
+                  ),
+                // 'some_icon' => array(
+                // 'type' => 'icon',
+                // 'label' => __('Select an icon', 'widget-form-fields-text-domain'),
+                // ),
+                'widget_title' => array(
+                  'type' => 'text',
+                  'label' => __( 'Business Card Title' )
+                  )
+                )
+              ),
             ),
 
             //The $base_folder path string.
