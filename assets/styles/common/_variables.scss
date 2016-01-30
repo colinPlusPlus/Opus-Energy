@@ -24,12 +24,14 @@ $text-color: #5f646d;
 
 //Fonts
 $font-family-sans-serif:  "averta" , sans-serif !default;
-$font-size-base: 15.84px;
+//$font-size-base: 15.84px;
+$font-size-base: 16px;
 
 //Navigation Bar
 $navbar-height: 			 70px;
 $navbar-margin-bottom: 0px;
 $navbar-default-bg: $light-blue;
+$navbar-border-radius: 0px;
 
 // Navbar links
 $navbar-default-link-color:                $blue !default;

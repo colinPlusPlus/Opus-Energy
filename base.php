@@ -21,7 +21,7 @@ use Roots\Sage\Wrapper;
     <?php if ( is_page() && $post->post_parent > 0 ): ?>
       <div class="wrap container" role="document">
     <?php else: ?>
-      <div class="wrap" role="document">
+      <div class="wrap container" role="document">
     <?php endif; ?>
         <div class="content">
           <main class="main">

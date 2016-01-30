@@ -39,6 +39,11 @@
   background-color: $periwinkle;
   padding: 20px 20px;
   border-radius: 50%;
+
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+    font-size: 23px;
+    padding: 10px;
+  }
 }
 
 .icon-question-mark:before {
