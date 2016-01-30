@@ -1,15 +1,36 @@
+//Home page Jumbotron 
+.panel-widget-style{
+    .so-widget-jumbotron-widget{
+    height: 649px;
+    padding: 180px 0px;
+    text-align: center;
+
+    h1{
+    	font-size: 48px;
+    	margin-bottom: 50px;
+    }
+
+    p{
+    	margin-bottom: 40px;
+    }
+  }
+}
+
 .card-header{
 	color: white;
-	padding: 10px 0px;
+	padding: 20px 0px;
 	width: 100%;
 	
 	h2 {
-		font-weight: bold;
+		font-weight: 800;
 		text-transform: uppercase;
-		font-size: 16px;
-		letter-spacing: 0.5px;
+		font-size: 20px;
+		letter-spacing: 0.3px;
 		margin-bottom: 14px;
-		margin-top: 0px;
+		margin-top: 24px;
+	}
+	i {
+		display: block;
 	}
 }
 .card-header.blue{
@@ -17,6 +38,18 @@
 }
 
 .card-body{
+	background-color: white;
+	padding: 26px;
+	text-align: center;
+
+	p{
+		margin-bottom: 20px;
+		text-align: left;
+	}
+}
+.card-footer{
+	text-align: center;
+	border-top: 1px solid #eee;
 	background-color: white;
 	padding: 20px;
 }
