@@ -265,6 +265,24 @@ add_filter('siteorigin_widgets_widget_folders', function($folders){
 // }
 // add_filter( 'siteorigin_widgets_icon_families', __NAMESPACE__ . '\\my_icon_families_filter' );
 
+// add_filter( 'siteorigin_panels_before_row', function($grid){
+//   $grid = '<div class="container">';
+//   return $grid;
+// });
 
+// add_filter( 'siteorigin_panels_after_row', function($grid){
+//   $grid = '</div>';
+//   return $grid;
+// });
 
+//SiteOrigin Panels Group
+add_filter('siteorigin_panels_widget_dialog_tabs', function($tabs) {
+  $tabs[] = array(
+    'title' => __('Opus Energy Widgets', 'sage'),
+    'filter' => array(
+      'groups' => array('opus')
+    )
+  );
+  return $tabs;
+}, 20);
 

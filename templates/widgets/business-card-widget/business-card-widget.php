@@ -23,6 +23,7 @@ class Business_Card_Widget extends SiteOrigin_Widget {
       // It has a couple of extras like the optional help URL, which should link to your sites help or support page.
       array(
           'description' => __('An Opus Energy Widget', 'sage'),
+          'panels_groups' => array('opus'),
       ),
 
       //The $control_options array, which is passed through to WP_Widget

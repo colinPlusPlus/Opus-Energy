@@ -19,7 +19,7 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header');
     ?>
     <?php if ( is_page() && $post->post_parent > 0 ): ?>
-      <div class="wrap container" role="document">
+      <div class="wrap container bg-white" role="document">
     <?php else: ?>
       <div class="wrap container" role="document">
     <?php endif; ?>

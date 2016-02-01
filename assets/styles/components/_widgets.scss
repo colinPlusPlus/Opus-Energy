@@ -1,29 +1,27 @@
-//Home page Jumbotron 
-.panel-widget-style{
-    .so-widget-jumbotron-widget{
-    height: 649px;
-    padding: 180px 0px;
-    text-align: center;
+/*
+ * Jumbotron Widget
+ */ 
 
-    h1{
-    	font-size: 48px;
-    	margin-bottom: 50px;
+.so-widget-jumbotron-widget{
+  h1{
+  	font-size: 48px;
+  	margin: 0px 0px 50px;
 
-    	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
-    		font-size: 41px;
-				font-weight: 300;
-    	}
-    }
+  	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+  		font-size: 41px;
+  	}
+  }
 
-    p{
-    	margin-bottom: 40px;
-    }
+  p{
+  	margin-bottom: 40px;
   }
 }
+
 
 /*
  * Business Card Styles
  */
+
 .card-wrapper{
 	height: 568px;
 	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
@@ -71,8 +69,8 @@
 	text-align: center;
 	
 	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
-		height: 210px;
-		padding:	10px;
+		height: 187px;
+		padding: 10px;
 	}
 
 	p{
@@ -93,14 +91,14 @@
 	} 
 }
 .card-footer{
-	height: 103px;
+	height: 113px;
 	text-align: center;
 	border-top: 1px solid #eee;
 	background-color: white;
-	padding: 20px;
+	padding: 30px;
 
 	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
-		padding: 10px;
-		height: 50px;
+		padding: 20px;
+		height: 75px;
 	}
 }

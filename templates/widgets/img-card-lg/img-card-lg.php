@@ -1,28 +1,28 @@
 <?php
 
-/*
- * Widget Name: Jumbotron Widget
- * Description: Bootstrap Jumbotron
- * Author: Colin Williams
- */
+/**
+* Widget Name: Large Image Card
+*	Description: Business card wth background image and optional text
+*	Author: Colin Williams 
+*/
 
-class Jumbotron_Widget extends SiteOrigin_Widget {
-
+class Image_Card_Large_Widget extends SiteOrigin_Widget {
+	
 	function __construct() {
-		//Here you can do any preparation required before calling the parent constructor, such as including additional files or initializing variables.
 
+		
 		//Call the parent constructor with the required arguments.
 		parent::__construct(
-		// The unique id for your widget.
-			'jumbotron-widget',
+			// The unique id for your widget.
+			'img-card-lg',
 
 			// The name of the widget for display purposes.
-			__('Jumbotron Widget', 'sage'),
+			__('Large Image Card', 'sage'),
 
 			// The $widget_options array, which is passed through to WP_Widget.
 			// It has a couple of extras like the optional help URL, which should link to your sites help or support page.
 			array(
-				'description' => __('A Jumbotron widget.', 'sage'),
+				'description' => __('Business card with background image and optional text', 'sage'),
 				'panels_groups' => array('opus'),
 			),
 
@@ -40,11 +40,11 @@ class Jumbotron_Widget extends SiteOrigin_Widget {
 	        'library' => 'image',
 	        'fallback' => true
 	  		),
-				'header' => array(
+	  		'header' => array(
 					'type' => 'text',
-					'label' => __('Title Header Text', 'sage'),
+					'label' => __('Title text', 'siteorigin-widgets'),
 				),
-				'Text Area' => array(
+				'text_area' => array(
 	        'type' => 'textarea',
 	        'label' => __( 'Type a message', 'widget-form-fields-text-domain' ),
 	        'rows' => 4
@@ -65,7 +65,7 @@ class Jumbotron_Widget extends SiteOrigin_Widget {
         ),
         'url' => array(
 	        'type' => 'link',
-	        'label' => __('Post ID', 'sage'),
+	        'label' => __('Button URL', 'sage'),
 	        'default' => 'http://www.example.com'
     		)  
 			),
@@ -76,8 +76,7 @@ class Jumbotron_Widget extends SiteOrigin_Widget {
 	}
 
 	function get_template_name($instance) {
-		return 'jumbotron-template';
+		return 'img-card-lg-template';
 	}
-
 }
-siteorigin_widget_register('jumbotron-widget', __FILE__, 'Jumbotron_Widget');
+siteorigin_widget_register('img-card-lg', __FILE__, 'Image_Card_Large_Widget');
