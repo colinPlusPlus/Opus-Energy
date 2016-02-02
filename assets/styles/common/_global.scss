@@ -1,1 +1,17 @@
+h2{
+	font-size: 20px;
+}
+.main{
+	margin-bottom: 30px;
+}
 
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+	h2{
+		font-size: 16px;
+	}
+
+	p{
+		font-size: 12px;
+	}
+}

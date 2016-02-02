@@ -26,6 +26,20 @@
 		}
 	}
 
+	.img-card-sm-wrap{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		color: white;		
+		padding: 30px;
+
+		p{
+			text-align: left;
+		}
+	}
+
 	.img-content-footer{
 		position: absolute;
 		top: 80%;
@@ -37,8 +51,11 @@
 
 //Media Query $screen-md
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+	
 	.img-wrap{
 		.img-card-lg-wrap{
+			padding: 0px 20px;
+
 			h2{
 				font-size: 16px;
 			}
@@ -47,5 +64,14 @@
 				font-size: 12px;
 			}
 		}
+		.img-card-sm-wrap{
+		padding: 20px;
+
+		p{
+			text-align: left;
+		}
 	}
 }
+	}
+
+	
