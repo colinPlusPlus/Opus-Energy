@@ -1,7 +1,9 @@
 <div class="card-wrapper">
 	<div class="card-header blue">
-		<i class="text-center <?php echo wp_kses_post($instance['header_section']['icon_selection']) ?>"></i>
-	  <h2 class="text-center"><?php echo wp_kses_post($instance['header_section']['widget_title']) ?></h2>
+		<div class="center-items">
+			<i class="text-center <?php echo wp_kses_post($instance['header_section']['icon_selection']) ?>"></i>
+	  	<h2 class="text-center"><?php echo wp_kses_post($instance['header_section']['widget_title']) ?></h2>
+		</div>
 	</div>
 	<div class="card-body">
 		<?php $repeater_items = $instance['body_section']['a_repeater']; ?>

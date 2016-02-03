@@ -1,1 +1,22 @@
+h2 {
+    font-size: 20px;
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+        font-size: 16px;
+    }
+}
+
+p{
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+        font-size: 12px;
+    }
+}
+
+.center-items{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
