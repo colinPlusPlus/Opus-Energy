@@ -1,6 +1,7 @@
 .img-wrap{
 	position: relative;
 	text-align: center;
+
 	
 	.img-content-wrap{
 		position: absolute;
@@ -11,13 +12,15 @@
 	}
 
 	.img-card-lg-wrap{
-		position: absolute;
+		
+		@extend .img-content-wrap;
 		top: 15%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 100%;
 		color: white;
 		padding: 0px 60px;
+
+		@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+			padding: 0px 20px;
+		}
 
 		h2{
 			font-size: 20px;
@@ -25,13 +28,25 @@
 			margin-bottom: 30px;
 		}
 	}
+	.img-card-sm-wrap{
+		
+		@extend .img-content-wrap;
+		color: white;
+		
+		@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+			
+			padding: 0px 20px;
+			margin-top: 0px;
 
+			h2{
+				margin-top: 0px;
+			}
+		}
+
+	}
 	.img-content-footer{
-		position: absolute;
+		@extend .img-content-wrap;
 		top: 80%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-
 	}
 }
 

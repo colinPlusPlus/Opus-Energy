@@ -6,7 +6,7 @@
     	<h2 class="text-uppercase text-center"><?php echo wp_kses_post($instance['header']) ?></h2>
  		<?php endif; ?>
   	<?php if ( $instance['text_area'] ): ?>
-	  	<p><?php echo wp_kses_post($instance['text_area']) ?></p>
+	  	<p class="text-left"><?php echo wp_kses_post($instance['text_area']) ?></p>
   	<?php endif; ?>
     <a class="btn <?php echo $instance['button'] ?>" 
        href="<?php echo esc_url ( get_permalink ( $url[1] ) ) ?>" 

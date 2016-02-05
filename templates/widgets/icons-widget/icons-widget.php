@@ -52,7 +52,7 @@ class Icon_Widget extends SiteOrigin_Widget {
             'icon-switch-to-us-icon' => __( 'Switch To Us', 'sage' )
           )
         ),
-        'button_selection_body' => array(
+        'button_selection' => array(
           'type' => 'select',
           'prompt' => __( 'Choose a Button Colour', 'sage' ),
           'options' => array(
@@ -60,9 +60,14 @@ class Icon_Widget extends SiteOrigin_Widget {
             'btn-default' => __('Green', 'sage')
           )
         ),
-       'button_text_body' => array(
+        'url' => array(
+          'type' => 'link',
+          'label' => __('Button URL', 'sage')
+        ),
+        'icon_text' => array(
           'type' => 'text',
-          'prompt' => __( 'Button Text', 'sage' ),
+          'label' => __( 'Icon Text', 'sage' ),
+          'prompt' => __( 'Icon Caption', 'sage' )
         ),  
       ),
     
