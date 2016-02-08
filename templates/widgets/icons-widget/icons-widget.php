@@ -52,7 +52,12 @@ class Icon_Widget extends SiteOrigin_Widget {
             'icon-switch-to-us-icon' => __( 'Switch To Us', 'sage' )
           )
         ),
-        'button_selection' => array(
+       'icon_text' => array(
+          'type' => 'text',
+          'label' => __( 'Icon Text', 'sage' ),
+          'prompt' => __( 'Icon Caption', 'sage' )
+        ),  
+        'button' => array(
           'type' => 'select',
           'prompt' => __( 'Choose a Button Colour', 'sage' ),
           'options' => array(
@@ -60,15 +65,18 @@ class Icon_Widget extends SiteOrigin_Widget {
             'btn-default' => __('Green', 'sage')
           )
         ),
+        'button_text' => array(
+          'type' => 'text',
+          'label' => __( 'Button Text', 'sage' )
+        ),
         'url' => array(
           'type' => 'link',
           'label' => __('Button URL', 'sage')
         ),
-        'icon_text' => array(
-          'type' => 'text',
-          'label' => __( 'Icon Text', 'sage' ),
-          'prompt' => __( 'Icon Caption', 'sage' )
-        ),  
+        // 'some_icon' => array(
+        //   'type' => 'icon',
+        //   'label' => __('Select an icon', 'widget-form-fields-text-domain'),
+        // )
       ),
     
       //The $base_folder path string.

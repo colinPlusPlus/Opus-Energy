@@ -37,26 +37,6 @@ class Small_Business_Card_Widget extends SiteOrigin_Widget {
         'label' => __( 'Business Card Header' , 'asge' ),
         'hide' => false,
         'fields' => array(
-          'icon_selection' => array(
-            'type' => 'select',
-            'prompt' => __( 'Choose an icon', 'sage' ),
-            'options' => array(
-                'icon-shop' => __( 'Shop Icon', 'sage' ),
-                'icon-question-mark' => __( 'Question Mark', 'sage' ),
-                'icon-document' => __( 'Document Icon', 'sage' ),
-                'icon-chat' => __( 'Chat Icon', 'sage' ),
-                'icon-conversation' => __( 'Conversation Icon', 'sage' ),
-                'icon-electricity' => __( 'Electricity Icon', 'sage' ),
-                'icon-gas' => __( 'Gas Icon', 'sage' ),
-                'icon-office' => __( 'Office Icon', 'sage' ),
-                'icon-meters' => __( 'Meters Icon', 'sage' ),
-                'icon-moving-truck' => __( 'Moving Truck', 'sage' ),
-                'icon-computer' => __( 'Computer Icon', 'sage' ),
-                'icon-pound' => __( 'British Pound', 'sage' ),
-                'icon-windmill' => __( 'Wind Energy', 'sage' ),
-                'icon-switch-to-us-icon' => __( 'Switch To Us', 'sage' )
-              )
-            ),
           'widget_title' => array(
             'type' => 'text',
             'label' => __( 'Business Card Title' )
@@ -67,11 +47,13 @@ class Small_Business_Card_Widget extends SiteOrigin_Widget {
           'type' => 'section',
           'label' => __( 'Business Card Text' , 'sage' ),
           'hide' => false,
-          'body_text' => array(
-            'type' => 'textarea',
-            'label' => __( 'Type a message', 'sage' ), 
-            'rows' => 2
-          ),
+          'fields' => array(
+            'body_text' => array(
+              'type' => 'textarea',
+              'label' => __( 'Type a message', 'sage' ), 
+              'rows' => 2
+            )
+          )
         ),
         'button_section' => array(
           'type' => 'section',

@@ -148,45 +148,45 @@ function custom_post_types() {
     )
   );
 
-  register_post_type( 'Industry news',
-    array(
-      'labels' => array(
-        'name' => __( 'Industry news' ),
-        'singular_name' => __( 'Industry news' )
-      ),
-      'public' => true,
-      'rewrite' => array('slug' => 'industry-news'),
-      'has_archive' => true,
-      'menu_icon' => 'dashicons-media-document'
-    )
-  );
+  // register_post_type( 'Industry news',
+  //   array(
+  //     'labels' => array(
+  //       'name' => __( 'Industry news' ),
+  //       'singular_name' => __( 'Industry news' )
+  //     ),
+  //     'public' => true,
+  //     'rewrite' => array('slug' => 'industry-news'),
+  //     'has_archive' => true,
+  //     'menu_icon' => 'dashicons-media-document'
+  //   )
+  // );
 
-  register_post_type( 'People',
-    array(
-      'labels' => array(
-        'name' => __( 'People' ),
-        'singular_name' => __( 'People' )
-      ),
-    'public' => true,
-    'hierarchical' => true,
-    'has_archive' => false,
-    'menu_icon' => 'dashicons-admin-users'
-    )
-  );
-  register_post_type( 'Newsletters',
-    array(
-      'labels' => array(
-        'name' => __( 'Newsletters' ),
-        'singular_name' => __( 'Newsletters' )
-      ),
-    'public' => true,
-    'rewrite' => array('slug' => 'corporate/newsletter'),
-    'hierarchical' => true,
-    'supports' => array('title','editor','thumbnail','page-attributes'),
-    'has_archive' => false,
-    'menu_icon' => 'dashicons-analytics'
-    )
-  );
+  // register_post_type( 'People',
+  //   array(
+  //     'labels' => array(
+  //       'name' => __( 'People' ),
+  //       'singular_name' => __( 'People' )
+  //     ),
+  //   'public' => true,
+  //   'hierarchical' => true,
+  //   'has_archive' => false,
+  //   'menu_icon' => 'dashicons-admin-users'
+  //   )
+  // );
+  // register_post_type( 'Newsletters',
+  //   array(
+  //     'labels' => array(
+  //       'name' => __( 'Newsletters' ),
+  //       'singular_name' => __( 'Newsletters' )
+  //     ),
+  //   'public' => true,
+  //   'rewrite' => array('slug' => 'corporate/newsletter'),
+  //   'hierarchical' => true,
+  //   'supports' => array('title','editor','thumbnail','page-attributes'),
+  //   'has_archive' => false,
+  //   'menu_icon' => 'dashicons-analytics'
+  //   )
+  // );
 
   register_post_type( 'Testimonials',
       array(
@@ -213,19 +213,19 @@ function custom_post_types() {
     )
   );
 
-  register_post_type( 'Partners',
-    array(
-      'labels' => array(
-        'name' => __( 'Partners' ),
-        'singular_name' => __( 'Partner' )
-      ),
-    'public' => true,
-    'rewrite' => array('slug' => 'partner'),
-    'has_archive' => false,
-    'hierarchical' => true,
-    'menu_icon' => 'dashicons-groups'
-    )
-  );
+  // register_post_type( 'Partners',
+  //   array(
+  //     'labels' => array(
+  //       'name' => __( 'Partners' ),
+  //       'singular_name' => __( 'Partner' )
+  //     ),
+  //   'public' => true,
+  //   'rewrite' => array('slug' => 'partner'),
+  //   'has_archive' => false,
+  //   'hierarchical' => true,
+  //   'menu_icon' => 'dashicons-groups'
+  //   )
+  // );
 }
 
 add_post_type_support( 'People', 'page-attributes' );
@@ -252,18 +252,19 @@ add_filter('siteorigin_widgets_widget_folders', function($folders){
     return $folders;
 });
 
-// add custom icons to site origin select box
-// function my_icon_families_filter( $icon_families ) {
-//     $icon_families['my-rad-icon-family'] = array(
-//         'name' => __( 'My Rad Icons', 'example-text-domain' ),
-//         'style_uri' => get_template_directory_uri() .'/dist/icons.css',
-//         'icons' => array(
-//           'question-mark' => '&#97;'
-//         ),
-//     );
-//     var_dump($icon_families);
-// }
-// add_filter( 'siteorigin_widgets_icon_families', __NAMESPACE__ . '\\my_icon_families_filter' );
+//add custom icons to site origin select box
+function my_icon_families_filter( $icon_families ) {
+    $icon_families['my-rad-icon-family'] = array(
+        'name' => __( 'My Rad Icons', 'example-text-domain' ),
+        'style_uri' => 'http://i.icomoon.io/public/temp/d47354df31/UntitledProject/style.css',
+        'icons' => array(
+          'billing_icon' => '&#xe900',
+          'custom_serv' => '&#xe901'
+        ),
+    );
+    var_dump($icon_families);
+}
+add_filter( 'siteorigin_widgets_icon_families', __NAMESPACE__ . '\\my_icon_families_filter' );
 
 // add_filter( 'siteorigin_panels_before_row', function($grid){
 //   $grid = '<div class="container">';
