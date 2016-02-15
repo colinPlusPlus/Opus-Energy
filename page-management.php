@@ -1,9 +1,3 @@
-<?php
-/**
- * Template Name: Management_Team
- */
-?>
-
 <?php 
 	
 	global $wp_query;

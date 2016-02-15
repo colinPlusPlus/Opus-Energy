@@ -151,3 +151,80 @@
 		height: 181px;
 	}
 }
+
+/*
+ * Business Energy Page
+ */
+.so-widget-icon-widget-default-d75171398898{
+	
+}
+.content-height{
+	height: 790px;
+	position: relative;
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+		height: 562px;
+	}
+}
+
+.business-energy-icon{
+	i:before {
+		font-size: 40px;
+		padding: 30px;
+	}
+}
+.so-widget-button-widget{
+	text-align: center;
+}
+.about-image-padding{
+	padding-top: 14px;
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+		img{
+			width: 40%;
+			padding: 0px;
+			margin-top: -30px;
+		}
+	}
+}
+
+.about-info-margin{
+	margin-bottom: 50px;
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+		margin-bottom: 0px;
+	}
+}
+
+.phone-icon-blue-bg{
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	transform: translate(0%, -50%);
+	margin: 0px;
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+		transform: translate(0%, -50%);
+	}
+}
+.larger-business-icon-row{
+	i:before {
+		font-size: 60px;
+		padding: 50px;
+	}
+	i{
+		display: block;
+		color: white;
+		margin-bottom: 40px;
+	}
+	text-align: center;
+	padding: 50px 100px;
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+		i:before {
+			font-size: 40px;
+			padding: 40px;
+		}
+		i{
+			display: block;
+			color: white;
+			margin-bottom: 40px;
+			margin-top: -15px;
+		}
+	}
+}
