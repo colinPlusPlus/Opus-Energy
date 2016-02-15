@@ -1,8 +1,8 @@
 .btn{
     @include button-size(7px, 25px, $font-size-base, $line-height-base, $btn-border-radius-base);
-    width: 200px;
+    min-width: 200px;
     @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
     	@include button-size(7px, 15px, 12px, $line-height-base - 0.5, $btn-border-radius-base);
-    	width: 150px;
+    	min-width: 150px;
     }
 }

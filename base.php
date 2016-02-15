@@ -18,21 +18,17 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <?php if ( is_page() && $post->post_parent > 0 ): ?>
-      <div class="wrap container bg-white" role="document">
-    <?php else: ?>
-      <div class="wrap container" role="document">
-    <?php endif; ?>
-        <div class="content">
-          <main class="main">
-            <?php include Wrapper\template_path(); ?>
-          </main><!-- /.main -->
-          <?php if (Setup\display_sidebar()) : ?>
-            <aside class="sidebar">
-              <?php include Wrapper\sidebar_path(); ?>
-            </aside><!-- /.sidebar -->
-          <?php endif; ?>
-        </div><!-- /.content -->
+    <div class="wrap container" role="document">
+      <div class="content">
+        <main class="main">
+          <?php include Wrapper\template_path(); ?>
+        </main><!-- /.main -->
+        <?php if (Setup\display_sidebar()) : ?>
+          <aside class="sidebar">
+            <?php include Wrapper\sidebar_path(); ?>
+          </aside><!-- /.sidebar -->
+        <?php endif; ?>
+      </div><!-- /.content -->
     </div><!-- /.wrap -->
     <?php
       do_action('get_footer');

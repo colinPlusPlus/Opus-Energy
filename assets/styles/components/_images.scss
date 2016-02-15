@@ -9,6 +9,10 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		width: 100%;
+
+		.widget_text{
+			margin-bottom: 0px;
+		}
 	}
 
 	.img-card-lg-wrap{
@@ -32,6 +36,7 @@
 		
 		@extend .img-content-wrap;
 		color: white;
+		padding: 0px 30px;
 		
 		@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
 			
