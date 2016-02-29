@@ -152,45 +152,9 @@
 	}
 }
 
-/*
- * Business Energy Page
- */
-.so-widget-icon-widget-default-d75171398898{
-	
-}
-.content-height{
-	height: 790px;
-	position: relative;
-	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
-		height: 562px;
-	}
-}
 
-.business-energy-icon{
-	i:before {
-		font-size: 40px;
-		padding: 30px;
-	}
-}
 .so-widget-button-widget{
 	text-align: center;
-}
-.about-image-padding{
-	padding-top: 14px;
-	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
-		img{
-			width: 40%;
-			padding: 0px;
-			margin-top: -30px;
-		}
-	}
-}
-
-.about-info-margin{
-	margin-bottom: 50px;
-	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
-		margin-bottom: 0px;
-	}
 }
 
 .phone-icon-blue-bg{
@@ -225,6 +189,35 @@
 			color: white;
 			margin-bottom: 40px;
 			margin-top: -25px;
+		}
+	}
+}
+.button-widget-row{
+	padding: 35px;
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+		padding: 20px;
+	}
+}
+
+.page-content-wrapper{
+	min-height: 336px;
+	width: 100%
+}
+
+.inner-page-content-header.periwinkle{
+	color: $brand-primary;
+	background-color: $periwinkle;
+	height: 72px;
+	position: relative;
+}
+.page-content-body{
+	min-height: 264px;
+	background-color: $body-bg;
+	padding: 25px 15px 10px 10px;
+
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+		ul{
+			font-size: 14px;
 		}
 	}
 }

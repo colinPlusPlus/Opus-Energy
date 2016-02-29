@@ -93,6 +93,7 @@ class Business_Card_Widget extends SiteOrigin_Widget {
           'fields' => array(
             'button_selection_body' => array(
               'type' => 'select',
+              'label' => 'Choose a button for the body section',
               'prompt' => __( 'Choose a Button Colour', 'sage' ),
               'options' => array(
                 'btn-primary' => __('Pink', 'sage'),
@@ -102,9 +103,15 @@ class Business_Card_Widget extends SiteOrigin_Widget {
             'button_text_body' => array(
               'type' => 'text',
               'prompt' => __( 'Button Text', 'sage' ),
-            ),  
+            ),
+            'body_url' => array(
+              'type' => 'link',
+              'label' => __('Button Body URL', 'sage'),
+              'default' => 'http://www.example.com'
+            ),          
             'button_selection_footer' => array(
               'type' => 'select',
+              'label' => 'Choose a button for the footer section',
               'prompt' => __( 'Choose a Button Colour', 'sage' ),
               'options' => array(
                 'btn-primary' => __('Pink', 'sage'),
@@ -114,7 +121,12 @@ class Business_Card_Widget extends SiteOrigin_Widget {
             'button_text_footer' => array(
               'type' => 'text',
               'prompt' => __( 'Button Text', 'sage' ),
-            ),      
+            ),
+            'footer_url' => array(
+              'type' => 'link',
+              'label' => __('Footer Button URL', 'sage'),
+              'default' => 'http://www.example.com'
+            ),              
           )
         ),
       ),

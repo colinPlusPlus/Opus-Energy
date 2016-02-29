@@ -1,4 +1,11 @@
 h2 {
+    font-size: 32px;
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+        font-size: 28px;
+    }
+}
+
+h3 {
     font-size: 20px;
     @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
         font-size: 16px;
@@ -22,5 +29,3 @@ p{
 .main{
 	margin-bottom: 20px;	
 }
-
-

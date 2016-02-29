@@ -8,10 +8,12 @@
   	<?php if ( $instance['Text Area'] ): ?>
 	  	<p><?php echo wp_kses_post($instance['Text Area']) ?></p>
   	<?php endif; ?>
-  	<a class="btn <?php echo $instance['button'] ?>" 
-  		 href="<?php echo esc_url ( get_permalink ( $url[1] ) ) ?>" 
-  		 role="button">
-  		 <?php echo $instance['button_text'] ?>
-		</a>
+  	<?php if ( $instance['button_text'] ): ?>
+	  	<a class="btn <?php echo $instance['button'] ?>" 
+	  		 href="<?php echo esc_url ( get_permalink ( $url[1] ) ) ?>" 
+	  		 role="button">
+	  		 <?php echo $instance['button_text'] ?>
+			</a>
+		<?php endif; ?>
   </div>
 </div>

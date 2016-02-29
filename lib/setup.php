@@ -30,7 +30,10 @@ function setup() {
   // Register wp_nav_menu() menus
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
-    'primary_navigation' => __('Primary Navigation', 'sage')
+    'primary_navigation' => __('Primary Navigation', 'sage'),
+    'our-sites' => __('Our Sites', 'sage'),
+    'find-on' => __('Find Us On', 'sage'),
+    'footer' => __('Footer', 'sage')
   ]);
 
   // Enable post thumbnails
@@ -286,4 +289,3 @@ add_filter('siteorigin_panels_widget_dialog_tabs', function($tabs) {
   );
   return $tabs;
 }, 20);
-

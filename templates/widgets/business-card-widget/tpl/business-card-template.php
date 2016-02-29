@@ -1,3 +1,7 @@
+<?php	
+	$body_url = explode(':', $instance['button_section']['body_url']); 
+	$footer_url = explode(':', $instance['button_section']['footer_url']);
+?>
 <div class="card-wrapper">
 	<div class="card-header blue">
 		<div class="center-items">
@@ -10,17 +14,17 @@
 		<?php foreach ($repeater_items as $index => $repeater_item): ?>
 			<p>  <?php echo $repeater_item[body_text] ?> </p>
 		<?php endforeach; ?>
-		<button class="btn <?php echo $instance['button_section']['button_selection_body'] ?>" 
-						role="button" 
-						href="#">
-						<?php echo $instance['button_section']['button_text_body']?>
-		</button>
+		<a href="<?php echo esc_url ( strstr ($body_url[1], '/') ? $body_url[1] : get_permalink ( $body_url[1] ) ) ?>"
+			 class="btn <?php echo $instance['button_section']['button_selection_body'] ?>" 
+			 role="button">
+		   <?php echo $instance['button_section']['button_text_body']?>
+		</a>
 	</div>
 	<div class="card-footer">
-		<button class="btn <?php echo $instance['button_section']['button_selection_footer'] ?>" 
-						role="button" 
-						href="#">
-						<?php echo $instance['button_section']['button_text_footer']?>
-		</button>
+		<a href="<?php echo esc_url ( strstr ($footer_url[1], '/') ? $footer_url[1] : get_permalink ( $footer_url[1] ) ) ?>"
+			 class="btn <?php echo $instance['button_section']['button_selection_footer'] ?>" 
+			 role="button" >
+			 <?php echo $instance['button_section']['button_text_footer']?>
+		</a>
 	</div>
 </div>

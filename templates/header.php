@@ -1,6 +1,6 @@
 <header class="banner">
   <div class="container">
-    <a href="<?php echo bloginfo('url' ); ?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'?>" class="pull-left logo" alt="logo"/></a>
+    <a href="<?php echo bloginfo( 'url' ); ?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'?>" class="pull-left logo" alt="logo"/></a>
     <button class="btn btn-default pull-right green">My account</button>
   </div>
 </header>

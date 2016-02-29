@@ -1,6 +1,14 @@
 // Search form
 .search-form {
   @extend .form-inline;
+  .input-group{
+  	width: 100%;
+    ::placeholder {
+      font-style: italic;
+    }
+
+
+	}
 }
 .search-form label {
   font-weight: normal;
@@ -8,8 +16,30 @@
 }
 .search-form .search-field {
   @extend .form-control;
+  background-color: $light-blue;
+  box-shadow: none;
+  border: none;
+  height: 35px;
+ 
 }
+
 .search-form .search-submit {
   @extend .btn;
-  @extend .btn-default;
+  @extend .btn-success;
+  padding: 6px 20px;
+  min-width: 0px;
+  border: none;
+
+  i{
+  	color: #5f646d;
+  }
+
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+    padding: 11px 20px;
+  }
+}
+
+.search-form .input-group .search-field:not(:first-child):not(:last-child) {
+   border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }

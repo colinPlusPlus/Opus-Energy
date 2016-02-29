@@ -71,7 +71,12 @@ class Small_Business_Card_Widget extends SiteOrigin_Widget {
             'button_text_footer' => array(
               'type' => 'text',
               'prompt' => __( 'Button Text', 'sage' ),
-            ),      
+            ),
+            'url' => array(
+              'type' => 'link',
+              'label' => __('Button URL', 'sage'),
+              'default' => 'http://www.example.com'
+            ),        
           )
         ),
       ),
