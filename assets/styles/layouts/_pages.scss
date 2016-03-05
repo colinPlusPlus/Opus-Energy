@@ -9,6 +9,9 @@
 	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
 		height: 562px;
 	}
+	@media (max-width: $screen-xs-max){
+		height: 990px;
+	}
 }
 
 /*
@@ -94,3 +97,10 @@
 	 text-decoration: none;
 	}
 }
+/* Larger Business */
+
+// #pg-w56c138cfd587c-0{
+// 	@media (max-width: $screen-xs-max){
+// 		margin-bottom: 10px;
+// 	}
+// }

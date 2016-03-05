@@ -1,6 +1,6 @@
 <?php	$url = explode(':', $instance['url']); ?>
 <div class="img-wrap">
-	<img src="<?php echo wp_get_attachment_url($instance['background_image']); ?>" class="img-responsive" />
+	<img src="<?php echo wp_get_attachment_url($instance['background_image']); ?>" class="img-responsive jumbo-image" />
   <div class="img-content-wrap">
   	<?php if ( $instance['header'] ): ?>
     	<h1 class="center"><?php echo wp_kses_post($instance['header']) ?></h1>

@@ -1,5 +1,5 @@
 <footer class="content-info">
-  <div class="container">
+  <div class="container foo">
   	<?php if (has_nav_menu('our-sites')): ?>
   		<h4>OUR SITES </h4>
 	  	<?php    /**
