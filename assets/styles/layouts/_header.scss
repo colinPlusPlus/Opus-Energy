@@ -41,13 +41,22 @@
     > li:first-child {
         > a {
             padding-left: 0px;
+            @media (max-width: $screen-xs-max){
+              padding-left: 25px;
+            }
         }
     }
     
     > li:last-child {
         float: right;
+        @media (max-width: $screen-xs-max){
+          float: left;
+        }
         > a {
-            padding-right: 0px;
+          padding-right: 0px;
+          @media (max-width: $screen-xs-max){
+            padding-right: 25px;
+          }
         }    
     }
 

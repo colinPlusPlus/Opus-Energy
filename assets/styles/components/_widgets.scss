@@ -234,3 +234,9 @@
 		}
 	}
 }
+
+.blue-background{
+	@media (max-width: $screen-xs-max){
+		margin: 0 -10px;
+	}
+}
