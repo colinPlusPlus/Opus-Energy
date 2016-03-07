@@ -17,6 +17,9 @@
     @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
       height: 70px;
     }
+    @media (max-width: $screen-xs-max){
+      width: 40%;
+    }
   }
 }
 
