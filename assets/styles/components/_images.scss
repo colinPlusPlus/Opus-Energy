@@ -1,7 +1,12 @@
 .img-wrap{
 	position: relative;
 	text-align: center;
-	//height: 276px;
+	@media (max-width: $screen-xs-max) {
+		min-height: 100%;
+		.img-responsive.jumbo-image{
+			height: 400px;
+		}
+	}
 	
 	.img-content-wrap{
 		position: absolute;
@@ -53,6 +58,13 @@
 		
 		@extend .img-content-wrap;
 		top: 80%;
+	}
+}
+
+.so-widget-image{
+	@media (max-width: $screen-xs-max){
+		//width: 25%;
+		padding: 0 15px; 
 	}
 }
 

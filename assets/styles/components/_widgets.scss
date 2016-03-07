@@ -167,10 +167,20 @@
 		transform: translate(0%, -50%);
 	}
 }
+
+
+/* Larger Business */
+#pgc-w56c138cfd587c-2-1{
+
+}
 .larger-business-icon-row{
 	i:before {
 		font-size: 60px;
 		padding: 50px;
+		@media (max-width: $screen-xs-max){
+			font-size: 30px;
+			padding: 25px;
+		}
 	}
 	i{
 		display: block;
@@ -179,6 +189,9 @@
 	}
 	text-align: center;
 	padding: 50px 100px;
+	@media (max-width: $screen-xs-max){
+		padding: 0px;
+	}
 	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
 		i:before {
 			font-size: 40px;
@@ -219,5 +232,11 @@
 		ul{
 			font-size: 14px;
 		}
+	}
+}
+
+.blue-background{
+	@media (max-width: $screen-xs-max){
+		margin: 0 -10px;
 	}
 }
